@@ -1,0 +1,475 @@
+<html>
+         <head>
+ 					  <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+           	<script type='text/javascript' src='jquery-3.6.0.min.js'></script>
+ 
+                 <style>
+                         body {
+                                 margin:auto;
+                                 width:980px;
+                                 font-family: "open-sans",sans-serif !important;
+                         }
+ 												.btn_news_src {
+                           color: cornflowerblue;
+                           background: ghostwhite;
+                           cursor: pointer;
+                           font-size: 105%;
+                         }
+                         .div1 {
+                                 margin:15px;margin-bottom:30px; font-size:100%;
+                         }
+                         .span_news_source {
+                                 border-radius:3px;
+                                 border:0px solid gray;
+                                 padding:3px;
+                         }
+                         .my_btn{
+                           border-radius: 4px;
+                           color:#FFF;
+                           background: #d9534f;
+                           border: #d43f3a;
+                           padding: 3px 6px;
+ 													font-size: 80%;
+                         }
+                         #footnote div { margin: 10px }
+                         .div1 div { margin: 10px }
+                         .div2 div { margin: 6px }
+                         .div2 a {text-decoration:none}
+                         .date {color:#aaa; padding-right:5px;font-size:80%}
+ 												.step {margin-top: 20px !important;}
+                         .note {border-radius: 4px; border:1px solid goldenrod;
+                           padding:6px; color:red; font-size:115%; background: #eee}
+                 </style>
+ 					<script>
+             function show_news_items(news_src) {
+               for (i=1; i<=3; i++) $('#div_n'+i).hide();
+               $('#div_n'+news_src).show();
+             }
+           </script>
+         </head>
+ 
+ <body>
+ 
+ <div class="div1">
+	 <div style='display:none;background:black;color:white;font-size:200%;padding:10px'>SERVER IS UNDER UPDATE. COME BACK SOON!</div>
+
+   <h2><span style="color:dodgerblue">News</span><span style="color:green">2</span></span><span style="color:dodgerblue">PubMed</span>: <span style="color:#888">Linking Health News to Medical Literature</span></h2>
+ 
+   <div class="note"><b>Note:</b> our search engine is updated with new literature every night,
+     so for journal papers published <span style="color:red;background: yellow;padding:3px">exactly today</span>, our demo system may not be able to find it.
+   </div>
+ 
+         <div class="step"><b>STEP 1.</b> Install our browser extension <b>News2PubMed</b>
+           from <a target="_blank" href="https://chrome.google.com/webstore/detail/linking-health-news-to-me/oopmegnobeaedefphaoablaoeembfjhi">Chrome web store</a>.
+
+		   <br> <br>
+		   During installing the extension, if you see ``<span style='color:red;font-family:courier'>this extension can read and change your data on sites</span>'', that means
+		   the extension will insert a button of Search Health Literature into the news page your are reading on news-medical, eurekalert, or reuters.
+
+         </div>
+ 	 <div class="step"><b>STEP 2.</b> For a quick start, click a news article below, then click <span class="my_btn">Search Health Literature</span> under the headline (see the picture below).
+         </div>
+ 
+ </div>
+ 
+ <table>
+   <tr>
+     <td valign="top">
+       <div id="news_src" style="margin-bottom:10px">
+       News host:
+         <button class="btn-sm btn-primary" onclick="show_news_items(1)">news-medical.net</button>
+         <button class="btn-sm btn-info" onclick="show_news_items(2)">eurekalert.org</button>
+         <button class="btn-sm btn-warning" onclick="show_news_items(3)">reuters.com</button>
+       </div>
+ 
+       <div id="div_n1" class="div2" style="display: block">
+         
+<div>
+    <span class=date>2020-01-29</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20200129/New-strategy-using-organoids-to-study-childhood-brain-tumors.aspx">New strategy using organoids to study childhood brain tumors</a>
+</div>
+
+
+<div>
+    <span class=date>2019-11-18</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20191118/How-personality-traits-influence-retiree-spending.aspx">How personality traits influence retiree spending</a>
+</div>
+
+
+<div>
+    <span class=date>2019-04-16</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20190416/Study-suggests-new-approach-to-treat-renal-fibrosis.aspx">Study suggests new approach to treat renal fibrosis</a>
+</div>
+
+
+<div>
+    <span class=date>2018-03-01</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20180301/Study-unlocks-big-puzzle-in-familial-breast-cancer.aspx">Study unlocks big puzzle in familial breast cancer</a>
+</div>
+
+
+<div>
+    <span class=date>2017-11-10</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20171110/Genes-influence-our-eye-movements-study-shows.aspx">Genes influence our eye movements, study shows</a>
+</div>
+
+
+<div>
+    <span class=date>2017-08-31</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20170831/Motorized-molecules-driven-by-light-to-cut-into-cancer-cells.aspx">Motorized molecules driven by light to cut into cancer cells</a>
+</div>
+
+
+<div>
+    <span class=date>2017-08-20</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20170820/Nanomaterial-wrap-for-improved-tissue-imaging.aspx">Nanomaterial wrap for improved tissue imaging</a>
+</div>
+
+
+<div>
+    <span class=date>2015-10-06</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20151006/First-time-expectant-dads-experience-depression.aspx">First-time expectant dads experience depression</a>
+</div>
+
+
+<div>
+    <span class=date>2015-08-11</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20150811/Southern-style-diet-may-increase-risk-of-heart-disease.aspx">Southern-style diet may increase risk of heart disease</a>
+</div>
+
+
+<div>
+    <span class=date>2015-08-05</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20150805/Children-increase-parents-risk-for-viral-infection.aspx">Children increase parents’ risk for viral infection</a>
+</div>
+
+
+<div>
+    <span class=date>2014-09-24</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20140924/Diabetes-rates-among-US-adults-stabilizing.aspx">Diabetes rates among U.S. adults stabilizing</a>
+</div>
+
+
+<div>
+    <span class=date>2014-04-23</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20140423/Biting-into-whole-foods-can-make-children-rowdy.aspx">Biting into whole foods can make children rowdy</a>
+</div>
+
+
+<div>
+    <span class=date>2013-09-17</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20130917/Prospective-memory-fails-bipolar-patients.aspx">Prospective memory fails bipolar patients</a>
+</div>
+
+
+<div>
+    <span class=date>2013-02-20</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20130220/Gene-mutation-findings-classify-renal-cell-carcinoma.aspx">Gene mutation findings classify renal cell carcinoma</a>
+</div>
+
+
+<div>
+    <span class=date>2012-06-12</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20120612/Increased-risk-of-brain-aneurysm-linked-to-early-menopause.aspx">Increased risk of brain aneurysm linked to early menopause</a>
+</div>
+
+
+<div>
+    <span class=date>2012-05-24</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20120524/RARP-more-costly-than-RRP-in-treating-prostate-cancer.aspx">RARP more costly than RRP in treating prostate cancer</a>
+</div>
+
+
+<div>
+    <span class=date>2012-03-01</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20120301/CD4-T-cells-can-directly-kill-HIV-infected-cells.aspx">CD4 T cells can directly kill HIV-infected cells</a>
+</div>
+
+
+<div>
+    <span class=date>2011-09-12</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20110912/JHUSON-nursing-research-news.aspx">JHUSON nursing research news</a>
+</div>
+
+
+<div>
+    <span class=date>2009-12-31</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20091231/TENS-therapy-is-not-effective-against-chronic-low-back-pain.aspx">TENS therapy is not effective against chronic low-back pain</a>
+</div>
+
+
+<div>
+    <span class=date>2009-12-16</span> 
+    <a target=_blank href="https://www.news-medical.net/news/20091216/Post-surgical-infections-raise-healthcare-expenditures.aspx">Post-surgical infections raise healthcare expenditures</a>
+</div>
+
+       </div>
+       <div id="div_n2" class="div2" style="display: none">
+         
+<div>
+    <span class=date>2020-06-28</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2020-06/esoc-esi062620.php">Excessive sugar intake linked with unhealthy fat deposits</a>
+</div>
+
+
+<div>
+    <span class=date>2019-12-18</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2019-12/ki-rsn121619.php">Researchers support new strategies for HIV control</a>
+</div>
+
+
+<div>
+    <span class=date>2019-07-22</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2019-07/uoc--abl072219.php">Antibiotics before liver transplants lead to better results</a>
+</div>
+
+
+<div>
+    <span class=date>2018-07-24</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2018-07/sfl-hfc071118.php">High-throughput flow cytometry in drug discovery</a>
+</div>
+
+
+<div>
+    <span class=date>2015-10-28</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2015-10/sp-gsn102715.php">Greater support needed for pregnant transgender men</a>
+</div>
+
+
+<div>
+    <span class=date>2015-09-17</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2015-09/ki-nmo091515.php">Novel mechanism of insulin resistance in type 2 diabetes</a>
+</div>
+
+
+<div>
+    <span class=date>2014-04-03</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2014-04/aha-ims033114.php">Insomnia may significantly increase stroke risk</a>
+</div>
+
+
+<div>
+    <span class=date>2014-03-12</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2014-03/kcl-hc031114.php">'Love hormone' could provide new treatment for anorexia</a>
+</div>
+
+
+<div>
+    <span class=date>2013-11-27</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2013-11/wkh-ldh112713.php">Lasers deemed highly effective treatment for excessive scars</a>
+</div>
+
+
+<div>
+    <span class=date>2013-04-09</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2013-04/tuhs-dts040913.php">Defining the scope of skills for family medicine residencies</a>
+</div>
+
+
+<div>
+    <span class=date>2012-04-13</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2012-04/uoc--upy041312.php">UCSF project yields major resource for scientific research</a>
+</div>
+
+
+<div>
+    <span class=date>2010-09-30</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2010-09/ason-wds093010.php">Why do some dialysis centers have higher survival rates?</a>
+</div>
+
+
+<div>
+    <span class=date>2010-03-25</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2010-03/l-cma032410.php">China must accelerate progress towards clean air and water</a>
+</div>
+
+
+<div>
+    <span class=date>2009-10-27</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2009-10/bc-edc102609.php">Epilepsy drugs could treat Alzheimer's and Parkinson's</a>
+</div>
+
+
+<div>
+    <span class=date>2008-05-30</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2008-05/yu-yrc052808.php">Yale researchers clear up Alzheimer's plaques in mice</a>
+</div>
+
+
+<div>
+    <span class=date>2006-08-29</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2006-08/rson-pbm082506.php">Preoperative brain mapping alters tumor surgery</a>
+</div>
+
+
+<div>
+    <span class=date>2005-12-22</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2005-12/m-npr122205.php">New procedure reveals the secrets of the brain</a>
+</div>
+
+
+<div>
+    <span class=date>2003-02-12</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2003-02/chop-mam021203.php">Monoclonal antibody may control Crohn's disease in children</a>
+</div>
+
+
+<div>
+    <span class=date>2001-09-10</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2001-09/bsj-lsc090701.php">Low sperm count linked to organic solvents</a>
+</div>
+
+
+<div>
+    <span class=date>2000-12-07</span> 
+    <a target=_blank href="https://www.eurekalert.org/pub_releases/2000-12/BMJ-NAdw-0712100.php">New Alzheimer's drug will benefit patients and carers</a>
+</div>
+
+       </div>
+       <div id="div_n3" class="div2" style="display: none">
+         
+<div>
+    <span class=date>2019-12-02</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-suicide-guns/firearms-most-lethal-suicide-method-by-far-in-the-u-s-idUSKBN1Y62FD">Firearms most lethal suicide method by far in the U.S.</a>
+</div>
+
+
+<div>
+    <span class=date>2019-08-02</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-tobacco-universities/only-one-in-six-u-s-universities-are-smoke-free-idUSKCN1US1YI">Only one in six U.S. universities are smoke-free</a>
+</div>
+
+
+<div>
+    <span class=date>2019-05-16</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-toothpaste-charcoal/charcoal-toothpaste-may-do-harm-and-not-much-good-idUSKCN1SM2M3">Charcoal toothpaste may do harm and not much good</a>
+</div>
+
+
+<div>
+    <span class=date>2019-03-05</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-parenting-boys-guns/hands-off-parenting-tied-to-higher-risk-of-teen-gun-use-idUSKCN1QM2LN">Hands-off parenting tied to higher risk of teen gun use</a>
+</div>
+
+
+<div>
+    <span class=date>2018-12-25</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-physician-moms/doctor-moms-struggle-with-discrimination-too-idUSKCN1OO0R0">Doctor moms struggle with discrimination, too</a>
+</div>
+
+
+<div>
+    <span class=date>2018-09-12</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-transgender-teen-suicide/trans-teens-much-more-likely-to-attempt-suicide-idUSKCN1LS39K">Trans teens much more likely to attempt suicide</a>
+</div>
+
+
+<div>
+    <span class=date>2018-07-06</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-wind-turbines/annoyance-with-wind-turbines-may-affect-quality-of-life-idUSKBN1JW2M2">Annoyance with wind turbines may affect quality of life</a>
+</div>
+
+
+<div>
+    <span class=date>2017-02-14</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-pain-back-guidelines/dont-reach-for-pills-for-most-chronic-low-back-pain-idUSKBN15T2U3">Don&#039;t reach for pills for most chronic low back pain</a>
+</div>
+
+
+<div>
+    <span class=date>2016-03-28</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-cancer-acupuncture/acupuncture-may-ease-hot-flashes-in-women-with-breast-cancer-idUSKCN0WU1O7">Acupuncture may ease hot flashes in women with breast cancer</a>
+</div>
+
+
+<div>
+    <span class=date>2016-02-08</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-concussion-suicide/risk-of-suicide-increases-three-fold-after-a-concussion-idUSKCN0VH1T5">Risk of suicide increases three-fold after a concussion</a>
+</div>
+
+
+<div>
+    <span class=date>2016-01-08</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-cancer-us/new-u-s-cancer-cases-holding-steady-deaths-declining-idUSKBN0UM2I420160108">New U.S. cancer cases holding steady, deaths declining</a>
+</div>
+
+
+<div>
+    <span class=date>2015-10-09</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-smoking-outdoor-bans/support-rising-for-outdoor-smoking-bans-in-u-s-canada-idUSKCN0S31ZM20151009">Support rising for outdoor smoking bans in U.S., Canada</a>
+</div>
+
+
+<div>
+    <span class=date>2015-10-09</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-health-elderly-tai-chi/tai-chi-can-help-build-strength-relieve-pain-idUSKCN0S32MV20151009">Tai chi can help build strength, relieve pain</a>
+</div>
+
+
+<div>
+    <span class=date>2015-05-05</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-parents-influence-drinking/fathers-have-big-influence-on-teens-drinking-habits-idUSKBN0NQ2G120150505">Fathers have big influence on teens&#039; drinking habits</a>
+</div>
+
+
+<div>
+    <span class=date>2014-09-26</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-social-support-kids/in-person-friends-combat-bullies-better-than-online-friends-idUSKCN0HL20720140926">In-person friends combat bullies better than online friends</a>
+</div>
+
+
+<div>
+    <span class=date>2014-07-04</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-venom-allergy-insects/how-well-do-people-identify-stinging-bugs-idUSKBN0F91L220140704">How well do people identify stinging bugs?</a>
+</div>
+
+
+<div>
+    <span class=date>2014-03-28</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-head-injuries/mild-head-injuries-linked-to-risk-of-death-years-later-idUSBREA2R1V820140328">Mild head injuries linked to risk of death years later</a>
+</div>
+
+
+<div>
+    <span class=date>2014-02-11</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-kids-gap/kids-may-suffer-in-gap-between-haves-and-have-nots-idUSBREA1A21A20140211">Kids may suffer in gap between haves and have-nots</a>
+</div>
+
+
+<div>
+    <span class=date>2013-05-01</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-changing-mothers/changing-mothers-aid-limits-juice-for-kids-idUSBRE9400KB20130501">Changing mothers&#039; aid limits juice for kids</a>
+</div>
+
+
+<div>
+    <span class=date>2012-07-19</span> 
+    <a target=_blank href="https://www.reuters.com/article/us-tanning-ban/indoor-tanning-bans-more-common-than-a-decade-ago-idUSBRE86I1DE20120719">Indoor tanning bans more common than a decade ago</a>
+</div>
+
+       </div>
+     </td>
+     <td valign="top" align="center">
+       An example
+       <br>
+       <br>
+       <img height=240 src=demo_btn_search_health_literature.jpg>
+     </td>
+   </tr>
+ </table>
+ 
+ <div id=footnote style="background:#eee; padding:8px; margin-top:20px">
+   <b>Currently our demo only supports news articles from the following three news sources:</b>
+   <div>- <span class="span_news_source"><a href=https://www.reuters.com/news/archive/healthNews>https://www.reuters.com/news/archive/healthNews</a></span></div>
+   <div>-<span class="span_news_source"><a href=https://www.news-medical.net/news>https://www.news-medical.net/news</a>
+      </span></div>
+   <div>- <span class="span_news_source"><a href=https://www.eurekalert.org/bysubject/medicine.php>https://www.eurekalert.org/bysubject/medicine.php</a>
+      <!--br>&nbsp; : a major platform for universities, journal publishers, and other organizations to post research news releases
+      -->
+      </span></div>
+ </div>
+ 
+ 
+ 
+ </body>
+  </html>
