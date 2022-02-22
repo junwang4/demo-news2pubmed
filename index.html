@@ -95,12 +95,14 @@ In ACM SIGIR'21, July 11–15, 2021, Virtual Event, Canada. pp 2605--2609. <a hr
      <td valign="top">
        <div id="news_src" style="margin-bottom:10px">
        News host:
-         <button class="btn-sm btn-primary" onclick="show_news_items(1)">news-medical.net</button>
          <button class="btn-sm btn-info" onclick="show_news_items(2)">eurekalert.org</button>
+		 <!--
+         <button class="btn-sm btn-primary" onclick="show_news_items(1)">news-medical.net</button>
          <button class="btn-sm btn-warning" onclick="show_news_items(3)">reuters.com</button>
+		 -->
        </div>
  
-       <div id="div_n1" class="div2" style="display: block">
+       <div id="div_n1" class="div2" style="display: none">
          
 <div>
     <span class=date>2020-01-29</span> 
@@ -222,7 +224,7 @@ In ACM SIGIR'21, July 11–15, 2021, Virtual Event, Canada. pp 2605--2609. <a hr
 </div>
 
        </div>
-       <div id="div_n2" class="div2" style="display: none">
+       <div id="div_n2" class="div2" style="display: block">
          
 <div>
     <span class=date>2020-06-28</span> 
@@ -476,19 +478,17 @@ In ACM SIGIR'21, July 11–15, 2021, Virtual Event, Canada. pp 2605--2609. <a hr
    </tr>
  </table>
  
- <div id=footnote style="background:#eee; padding:8px; margin-top:20px">
+ <!--div id=footnote style="background:#eee; padding:8px; margin-top:20px">
    <b>Currently our demo only supports news articles from the following three news sources:</b>
    <div>- <span class="span_news_source"><a href=https://www.reuters.com/news/archive/healthNews>https://www.reuters.com/news/archive/healthNews</a></span></div>
    <div>-<span class="span_news_source"><a href=https://www.news-medical.net/news>https://www.news-medical.net/news</a>
       </span></div>
    <div>- <span class="span_news_source"><a href=https://www.eurekalert.org/bysubject/medicine.php>https://www.eurekalert.org/bysubject/medicine.php</a>
-      <!--br>&nbsp; : a major platform for universities, journal publishers, and other organizations to post research news releases
-      -->
       </span></div>
- </div>
+ </div-->
  
  
-<div style='margin-top:-10px; margin-bottom:20px; padding:5px; border:1px solid #ccc; background:lightyellow'>
+<div style='margin-top:10px; margin-bottom:20px; padding:5px; border:1px solid #ccc; background:lightyellow'>
 <b>Acknowledgments</b><br>
  <div style='margin-left:20px'>
 This research is partially supported by NSF under grant 1952353 and the Microsoft Investigator Fellowship program. 
